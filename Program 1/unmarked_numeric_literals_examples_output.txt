@@ -1,0 +1,58 @@
+5                                                   is a valid numeric literal         
+abc                                                 is NOT a valid numeric literal     
+2.                                                  is a valid numeric literal         
+#42                                                 is NOT a valid numeric literal     
+.314                                                is a valid numeric literal         
+--5                                                 is NOT a valid numeric literal     
+28.74                                               is a valid numeric literal         
+.e1                                                 is a valid numeric literal         
++9.11                                               is a valid numeric literal         
+++3.5                                               is NOT a valid numeric literal     
++12345678901234567890123456789012345.6789e+12       is a valid numeric literal         
+-0.0                                                is a valid numeric literal         
+-.E+3                                               is a valid numeric literal         
++08                                                 is a valid numeric literal         
+1e                                                  is NOT a valid numeric literal     
+-23                                                 is a valid numeric literal         
+2.3.4                                               is NOT a valid numeric literal     
+-7.12                                               is a valid numeric literal         
+-5.0.0                                              is NOT a valid numeric literal     
+2e5                                                 is a valid numeric literal         
+4E                                                  is NOT a valid numeric literal     
++3.1e4                                              is a valid numeric literal         
++e4                                                 is a valid numeric literal         
+-5.0E+8                                             is a valid numeric literal         
+.E.                                                 is NOT a valid numeric literal     
+0.1E-3                                              is a valid numeric literal         
+-E                                                  is NOT a valid numeric literal     
+-.02E5                                              is a valid numeric literal         
+NaN                                                 is NOT a valid numeric literal     
++0.0e0                                              is a valid numeric literal         
+inf                                                 is NOT a valid numeric literal     
+3.4e+03                                             is a valid numeric literal         
+1e+                                                 is a valid numeric literal         
+++12345e123e456789012345678901234567890abcdef       is NOT a valid numeric literal     
+3                                                   is a valid numeric literal         
+13.                                                 is a valid numeric literal         
+.328                                                is a valid numeric literal         
+41.16                                               is a valid numeric literal         
++45.80                                              is a valid numeric literal         
++0                                                  is a valid numeric literal         
+-01                                                 is a valid numeric literal         
+#                                                   is NOT a valid numeric literal     
+3                                                   is a valid numeric literal         
+13.                                                 is a valid numeric literal         
+.328                                                is a valid numeric literal         
+41.16                                               is a valid numeric literal         
++45.80                                              is a valid numeric literal         
++0                                                  is a valid numeric literal         
+-01                                                 is a valid numeric literal         
+-14.4                                               is a valid numeric literal         
+1e12                                                is a valid numeric literal         
++1.4e6                                              is a valid numeric literal         
+-2.e+7                                              is a valid numeric literal         
+01E-06                                              is a valid numeric literal         
+-.4E-7                                              is a valid numeric literal         
+00e0                                                is a valid numeric literal         
++0e1                                                is a valid numeric literal         
+.2E-03                                              is a valid numeric literal         
