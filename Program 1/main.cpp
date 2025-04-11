@@ -67,6 +67,7 @@ bool is_valid_literal(const std::string &literal)
 //     s.erase(std::find_if(s.rbegin(), s.rend(), [](unsigned char c) { return !std::isspace(c); }).base(), s.end());
 // }
 
+/*
 void trim(std::string &s)
 {
     s.erase(s.begin(), std::find_if(s.begin(), s.end(), 
@@ -74,6 +75,38 @@ void trim(std::string &s)
     s.erase(std::find_if(s.rbegin(), s.rend(), 
         [](int c) -> bool { return !std::isspace(c); }).base(), s.end());
 }
+*/
+
+void trim(std::string &s)
+{
+    s.erase(s.begin(),
+            std::find_if(s.begin(), s.end(),
+                [](unsigned char c) { return !std::isspace(c); }));
+
+    s.erase(std::find_if(s.rbegin(), s.rend(),
+                [](unsigned char c) { return !std::isspace(c); }).base(),
+            s.end());
+}
+
+/*
+void trim(std::string &s)
+{
+    // Find the position of the first non-whitespace character
+    std::size_t start = s.find_first_not_of(" \t\n\r\f\v");
+    if (start == std::string::npos)
+    {
+        // The string is all whitespace or empty
+        s.clear();
+        return;
+    }
+
+    // Find the position of the last non-whitespace character
+    std::size_t end = s.find_last_not_of(" \t\n\r\f\v");
+
+    // Rebuild the string to just contain the trimmed portion
+    s = s.substr(start, end - start + 1);
+}
+*/
 
 int main(int argc, char *argv[])
 {
