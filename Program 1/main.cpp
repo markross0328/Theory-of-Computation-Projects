@@ -62,11 +62,10 @@ bool is_valid_literal(const std::string &literal)
 
 void trim(std::string &s)
 {
-    s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](unsigned char c)
-                                    { return !std::isspace(c); }));
-    s.erase(std::find_if(s.rbegin(), s.rend(), [](unsigned char c)
-                         { return !std::isspace(c); })
-                .base(),
+    s.erase(s.begin(), std::find_if(s.begin(), s.end(), 
+        [](unsigned char c) { return !std::isspace(c); }));
+    s.erase(std::find_if(s.rbegin(), s.rend(), 
+        [](unsigned char c) { return !std::isspace(c); }).base(),
             s.end());
 }
 
