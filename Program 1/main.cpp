@@ -66,6 +66,7 @@ void trim(std::string &s)
     s.erase(std::find_if(s.rbegin(), s.rend(), [](unsigned char c) { return !std::isspace(c); }).base(), s.end());
 }
 
+
 int main(int argc, char *argv[])
 {
 
