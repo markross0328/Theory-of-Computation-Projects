@@ -99,11 +99,7 @@ void trim(std::string &s)
         s.clear();
         return;
     }
-
-    // Find the position of the last non-whitespace character
     std::size_t end = s.find_last_not_of(" \t\n\r\f\v");
-
-    // Rebuild the string to just contain the trimmed portion
     s = s.substr(start, end - start + 1);
 }
 */
