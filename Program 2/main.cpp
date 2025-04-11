@@ -97,6 +97,25 @@ std::string print_sigmastar(const std::vector<char> alphabet_set, int length, in
             }
         }
         break;
+    case 5:
+        for (int i = 0; i < alphabet_set.size(); i++)
+        {
+            for (int j = 0; j < alphabet_set.size(); j++)
+            {
+                for (int k = 0; k < alphabet_set.size(); k++)
+                {
+                    for (int l = 0; l < alphabet_set.size(); l++)
+                    {
+                        for (int m = 0; m < alphabet_set.size(); m++)
+                        {
+                            num_strings++;
+                            std::cout << alphabet_set[i] << alphabet_set[j] << alphabet_set[k] << alphabet_set[l] << alphabet_set[m] << " -> " + std::to_string(num_strings) << std::endl;
+                        }
+                    }
+                }
+            }
+        }
+        break;
     case 6:
         for (int i = 0; i < alphabet_set.size(); i++)
         {
