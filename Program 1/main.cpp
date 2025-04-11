@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iomanip>
 #include <algorithm>
+#include <cctype>
 
 bool is_operator(char c)
 {
